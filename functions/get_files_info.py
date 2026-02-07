@@ -17,4 +17,4 @@ def get_files_info(working_directory, directory="."):
             dir_info.append(f"- {item}: file_size={size} bytes, is_dir={is_dir}")
         return "\n".join(dir_info)
     except Exception as e:
-        return f"Error: {e}"
+        return f"Error listing files: {e}"
